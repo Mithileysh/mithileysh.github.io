@@ -1,7 +1,89 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+        <link rel='icon' href='avatar.jpg'>
+        <title>Phong Nguyen</title>
+
+        <style>
+            body {
+                max-width: 1024px;
+                margin: 10px auto; /* center whole page */
+            }
+            .summary {
+                text-align: center;
+            }
+            .summary img {
+                width: 50px;
+                border-radius: 50%;
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 10px;
+            }
+            .summary span {
+                font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                font-size: 20px;
+                font-weight: lighter;
+                color: grey;
+            }
+            .projects {
+                margin-top: 30px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .project {
+                margin: 20px auto; /* center all projects */
+                width: 300px;
+                border: 1px solid hsl(0, 0%, 80%);
+                border-radius: 5px;
+                box-shadow: 0 0 5px hsl(0, 0%, 80%);
+                display: inline-block;
+                text-decoration: none;
+            }
+            .project:hover {
+                border: 1px solid orangered;
+                box-shadow: 0 0 5px orangered;
+                transition: all 0.2s ease-in-out;
+            }
+            .project img {
+                max-width: 100%;
+                max-height: 200px;
+                display: block;
+                margin: auto;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+            .project span {
+                font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                font-size: 12px;
+                border-top: 1px solid hsl(0, 0%, 80%);
+                display: block;
+                padding: 5px;
+                color: gray;
+            }
+            .project span .title {
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class='summary'>
+            <img src='avatar.jpg'/>
+            <span>I am Phong Nguyen. Here are some of my data visualisation and machine learning projects.</span>
+        </div>
+        <div class='projects'>
+            <a class='project' href='https://phongvis.github.io/threadlet/' target='_blank' >
+                <img src='threadlet.png'>
+                <span><b class='title'>Threadlet.</b> Visual exploration of email threads.</span>
+            </a>
+            <a class='project' href='http://valcri.org/' target='_blank' >
+                <img src='valcri.png'>
+                <span><b class='title'>VALCRI.</b> Visual analysis of multivariate crime data.</span>
+            </a>
+            <a class='project' href='http://vis4sense.github.io/timesets/index.html' target='_blank' >
+                <img src='timesets.png'>
+                <span><b class='title'>TimeSets.</b> Timeline Visualization with Set Relations.</span>
+            </a>
+        </div>
+    </body>
 </html>
